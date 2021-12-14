@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --fn-family: "Montserrat", Arial, "Helvetica Neue", sans-serif;
+  --fn-size: 14px;
+  --black: #000;
+  --black2: #282c3f;
+  --gray1: #686b78;
+  --gray2: #bebfc5;
+  --gray3: #f0f0f0;
+  --gray4: #a9abb2;
+  --gray5: #93959f;
+  --gray6: #7e808c;
+  --gray6: #4d4d4d;
+  --brown1: #2b1e16;
+  --white: #fff;
+  --orange: #fc8019;
+}
+
+*,
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+body {
+  font-size: var(--fn-size);
+  font-family: var(--fn-family);
+}
+
+.fn-exlarge {
+  font-weight: 800;
+}
+
+.fn-large {
+  font-weight: 600;
+}
+
+.fn-medium {
+  font-weight: 400;
+}
+
+.fn-small {
+  font-weight: 200;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.invert {
+  background: var(--black);
+  color: var(--white);
+}
+
+.disabled {
+  color: var(--gray5);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray1);
+}
+
+li {
+  list-style: none;
+}
+
+.img {
+  display: none;
+}

@@ -1,0 +1,43 @@
+.featureContainer * {
+  color: var(--white);
+  text-align: center;
+}
+
+.featureContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--brown1);
+}
+
+.featureWrapper {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featureSection {
+  flex: 0 0 350px;
+  margin: 5px 20px;
+  margin-bottom: 60px;
+}
+
+.featureSection img {
+  width: 105px;
+  height: 199px;
+  margin-bottom: 20px;
+}
+
+.featureTitle {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.featureText {
+  padding: 0 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}

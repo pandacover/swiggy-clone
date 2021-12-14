@@ -1,0 +1,288 @@
+.jumbotron {
+  width: 100vw;
+  height: 540px;
+  display: flex;
+  background: url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq");
+  background-position: 100%;
+  background-size: 44% 100%;
+  background-repeat: no-repeat;
+}
+
+.jbLeft {
+  /* flex: 1.65 1; */
+  display: flex;
+  max-width: 50%;
+  padding-left: 6vw;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* .jbContainer {
+  width: 80%;
+  padding: 40px 0;
+} */
+
+.jbNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jbNav img {
+  width: 190px;
+  height: 125px;
+}
+
+.jbLogin,
+.jbRegister {
+  width: 110px;
+  height: 40px;
+}
+
+.jbLogin {
+  background: transparent;
+}
+
+.jbLogin:hover {
+  color: var(--orange);
+}
+
+.jbRegister {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.12);
+}
+
+.jbTitle {
+  font-size: 40px;
+  color: var(--black2);
+  letter-spacing: -0.45px;
+}
+
+.jbSubtitle {
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  line-height: 40px;
+}
+
+.jbForm * {
+  font-size: 18px;
+}
+
+.jbForm {
+  width: 100%;
+  height: 60px;
+  display: grid;
+  margin: 35px 0;
+  grid-template-columns: 3fr 1fr;
+}
+
+.formSearch:focus-within {
+  border: 1px solid var(--orange);
+  border-right: transparent;
+}
+
+.formSearch {
+  height: 100%;
+  display: flex;
+  padding: 5px 10px 5px 20px;
+  align-items: center;
+  border: 1px solid var(--gray2);
+  border-right: transparent;
+  justify-content: space-between;
+}
+
+.toggleClear {
+  justify-content: space-between;
+}
+
+.formInput {
+  flex: 2;
+  border: none;
+  outline: transparent;
+  background: transparent;
+  caret-color: var(--orange);
+  font-weight: 300 !important;
+}
+
+.formLocate * {
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+
+.formLocate {
+  flex: 0.7;
+  gap: 10px;
+  display: flex;
+  padding: 12px 10px;
+  align-items: center;
+  background-color: transparent;
+}
+
+.formLocate > img {
+  width: 15px;
+  height: 15px;
+}
+
+.formLocate:hover {
+  background-color: var(--gray3);
+}
+
+.searchClear {
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.formSearchBtn {
+  width: 100%;
+  height: 100%;
+}
+
+.formBtn {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.captionTitle {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+.captionList {
+  list-style-type: none;
+}
+
+.listItem {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.listLink {
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.jbRight {
+  flex: 1.35 0;
+}
+
+.jbRight img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes animation {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.jbTitle {
+  animation: animation 3s ease infinite none;
+  -webkit-animation: animation 3s ease infinite none;
+}
+
+/*  Mobile view */
+@media only screen and (max-width: 1300px) {
+  .jumbotron {
+    background-image: linear-gradient(
+        to right,
+        rgba(247, 247, 247, 0.589),
+        rgba(219, 217, 217, 0.589)
+      ),
+      url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq");
+    background-size: 660px 100%;
+  }
+
+  .jbLeft {
+    max-width: 630px;
+    padding: 20px;
+  }
+
+  .jbSubtitle,
+  .listLink,
+  .formInput {
+    color: rgb(20, 20, 20);
+  }
+}
+
+@media (max-width: 600px) {
+  .jumbotron * {
+    overflow-y: hidden;
+  }
+
+  .jbLogin,
+  .jbRegister {
+    width: 80px;
+    height: 35px;
+  }
+
+  .jbForm * {
+    font-size: 14px;
+  }
+  .formLocate {
+    display: none;
+  }
+}
